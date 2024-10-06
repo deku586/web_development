@@ -26,7 +26,7 @@ header {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    cursor: pointer; /* Deixa claro que é clicável */
+    cursor: pointer; 
 }
 
 .profile-pic img {
@@ -35,7 +35,7 @@ header {
     object-fit: cover;
 }
 
-/* Estilização da biografia (inicialmente escondida) */
+
 .bio-content {
     display: none;
     position: absolute;
@@ -60,15 +60,14 @@ header {
     margin-top: 50px;
 }
 
-/* Estilização do container de cada círculo e texto */
 .circle-container {
     display: flex;
-    flex-direction: column; /* Alinha o círculo e o texto na vertical */
-    align-items: center;    /* Centraliza o conteúdo */
+    flex-direction: column; 
+    align-items: center;    
     text-align: center;
 }
 
-/* Estilização do círculo */
+
 .circle {
     width: 150px;
     height: 150px;
@@ -88,17 +87,42 @@ header {
     border-radius: 50%;
 }
 
-/* Estilização do texto abaixo do círculo */
+
 .circle-container p {
-    margin-top: 10px; /* Espaço entre o círculo e o texto */
+    margin-top: 10px; 
     font-size: 1.2rem;
     color: #333;
     font-weight: 600;
     text-transform: uppercase;
-    
 }
 
 .circle:hover {
     transform: scale(1.1);
 }
 
+
+
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-container p {
+        font-size: 1rem; 
+    }
+}
