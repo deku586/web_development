@@ -1,7 +1,13 @@
 {
-    "public": "templates",
-    "rewrites": [
-      { "source": "/static/(.*)", "destination": "/static/$1" }
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/templates/$1"
+      }
     ]
   }
   
