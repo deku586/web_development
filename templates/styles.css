@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, black, #d4af37, rgb(246, 240, 170));
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    background: linear-gradient(to bottom, rgb(113, 111, 112), rgb(255, 255, 255));
     color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,7 +31,7 @@ header {
 
 .menu li a {
     text-decoration: none;
-    color: #d4af37;
+    color: #e5e5e5;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -44,24 +41,132 @@ header {
 }
 
 main {
+    padding-top: 100px;
+}
+
+/* Seção Início */
+.inicio-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    padding-top: 80px; /* Compensar a altura do header */
-}
-
-.welcome h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #d4af37;
-    text-shadow: 2px 2px 4px black;
-}
-
-.welcome p {
-    font-size: 1.5rem;
     text-align: center;
-    max-width: 800px;
+    background-color: #403f41;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
     color: white;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #943894;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6a265a;
+}
+
+/* Seção Procedimentos */
+.procedimentos-section {
+    background-color: #eee;
+    color: #333;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.procedimentos-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.procedimentos-text {
+    max-width: 600px;
+}
+
+.procedimentos-text h2 {
+    font-size: 2.5rem;
+    color: #4b2354;
+    margin-bottom: 20px;
+}
+
+.procedimentos-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Seção "Quem Somos" */
+.about-section {
+    background-color: #4a4a4a;
+    color: #eee3ea;
+    padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quem-somos-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.quem-somos-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.quem-somos-text {
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin: 0;
+}
+
+/* Seção de Contato */
+.contact-section {
+    background-color: black;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
 }

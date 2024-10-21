@@ -3,26 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site da Clínica de Beleza</title>
+    <title>Clínica de Beleza</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Procedimentos</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Agendamento</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#procedimentos">Procedimentos</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
-            <h1>Bem-vindo à Nossa Clínica</h1>
-            <p>Oferecemos os melhores cuidados de beleza para você se sentir bem consigo mesma(o).</p>
+        <section id="inicio" class="inicio-section">
+            <div class="intro-text">
+                <h1>Realce a sua Beleza Natural</h1>
+                <p>Desperte a sua melhor versão com procedimentos exclusivos e personalizados.</p>
+                <a href="#procedimentos" class="btn">Agende Agora</a>
+            </div>
+        </section>
+
+        <!-- Seção Procedimentos -->
+        <section id="procedimentos" class="procedimentos-section">
+            <div class="procedimentos-container">
+                <div class="image-container">
+                    <img src="../static/ServiceCircle1.jpeg" alt="Imagem Procedimento">
+                </div>
+                <div class="procedimentos-text">
+                    <h2>Procedimentos Exclusivos</h2>
+                    <p>Nossos procedimentos são feitos com técnicas avançadas para realçar sua beleza natural. Personalizamos cada tratamento de acordo com suas necessidades específicas.</p>
+                    <p>Oferecemos tratamentos de rejuvenescimento, firmamento facial, cuidados com a pele e muito mais. Entre em contato e descubra como podemos ajudar você a alcançar os melhores resultados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Quem Somos" -->
+        <section id="quem-somos" class="about-section">
+            <div class="quem-somos-container">
+                <img src="../static/mae.png" alt="Equipe Clínica">
+                <h2>Quem Somos</h2>
+                <p class="quem-somos-text">Somos uma clínica especializada em oferecer os melhores cuidados de beleza para você se sentir bem consigo mesma(o). Nossa equipe altamente qualificada utiliza os melhores produtos e técnicas inovadoras para garantir a sua satisfação.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="contact-section">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para agendar sua consulta ou tirar suas dúvidas:</p>
+            <ul>
+                <li>Email: contato@clinica.com.br</li>
+                <li>Telefone: (11) 1234-5678</li>
+                <li>Endereço: Rua Exemplo, 123 - São Paulo</li>
+            </ul>
         </section>
     </main>
 </body>
