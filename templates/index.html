@@ -21,6 +21,7 @@
     <main>
         <section id="inicio" class="inicio-section">
             <div class="intro-text">
+                <img src="../static/logoMM-removebg-preview.png" alt="LogoMM" class="logo">
                 <h1>Realce a sua Beleza Natural</h1>
                 <p>Desperte a sua melhor versão com procedimentos exclusivos e personalizados.</p>
                 <a href="#procedimentos" class="btn">Agende Agora</a>
@@ -29,14 +30,66 @@
 
         <!-- Seção Procedimentos -->
         <section id="procedimentos" class="procedimentos-section">
-            <div class="procedimentos-container">
-                <div class="image-container">
-                    <img src="../static/ServiceCircle1.jpeg" alt="Imagem Procedimento">
+            <h2>Procedimentos Exclusivos</h2>
+            <div class="procedimentos-grid">
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Harmonização Corporal">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Harmonização Corporal</h3>
+                        <p>A harmonização corporal visa melhorar a estética corporal através de técnicas inovadoras que tonificam e esculpem o corpo.</p>
+                    </div>
                 </div>
-                <div class="procedimentos-text">
-                    <h2>Procedimentos Exclusivos</h2>
-                    <p>Nossos procedimentos são feitos com técnicas avançadas para realçar sua beleza natural. Personalizamos cada tratamento de acordo com suas necessidades específicas.</p>
-                    <p>Oferecemos tratamentos de rejuvenescimento, firmamento facial, cuidados com a pele e muito mais. Entre em contato e descubra como podemos ajudar você a alcançar os melhores resultados.</p>
+
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Harmonização Facial">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Harmonização Facial</h3>
+                        <p>A harmonização facial é um conjunto de procedimentos que visa equilibrar os traços faciais, melhorando a simetria e a aparência.</p>
+                    </div>
+                </div>
+
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Harmonização de Glúteos">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Harmonização de Glúteos</h3>
+                        <p>Procedimento destinado a tonificar e modelar os glúteos, oferecendo volume e definição.</p>
+                    </div>
+                </div>
+
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Hidro Lipo Não Aspirativa">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Hidro Lipo Não Aspirativa</h3>
+                        <p>A hidro lipo não aspirativa ajuda a eliminar gordura localizada com técnicas menos invasivas, sem a necessidade de aspiração.</p>
+                    </div>
+                </div>
+
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Criolipólise">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Criolipólise</h3>
+                        <p>A criolipólise é um tratamento não invasivo que utiliza o resfriamento para eliminar as células de gordura.</p>
+                    </div>
+                </div>
+
+                <div class="procedimentos-container">
+                    <div class="image-container">
+                        <img src="../static/mae.png" alt="Outro Procedimento">
+                    </div>
+                    <div class="procedimentos-text">
+                        <h3>Outro Procedimento</h3>
+                        <p>Oferecemos uma gama de outros procedimentos estéticos para melhorar sua saúde e aparência.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,9 +98,16 @@
         <section id="quem-somos" class="about-section">
             <div class="quem-somos-container">
                 <img src="../static/mae.png" alt="Equipe Clínica">
-                <h2>Quem Somos</h2>
-                <p class="quem-somos-text">Somos uma clínica especializada em oferecer os melhores cuidados de beleza para você se sentir bem consigo mesma(o). Nossa equipe altamente qualificada utiliza os melhores produtos e técnicas inovadoras para garantir a sua satisfação.</p>
+                <div class="quem-somos-text">
+                    <h2>Quem Somos</h2>
+                    <p>Somos uma clínica especializada em oferecer os melhores cuidados de beleza para você se sentir bem consigo mesma(o). Nossa equipe altamente qualificada utiliza os melhores produtos e técnicas inovadoras para garantir a sua satisfação.</p>
+                </div>
             </div>
+        </section>
+
+        <!-- Seção Mapa -->
+        <section id="mapa" class="map-section">
+            <div id="map"></div>
         </section>
 
         <!-- Seção de Contato -->
@@ -60,6 +120,10 @@
                 <li>Endereço: Rua Exemplo, 123 - São Paulo</li>
             </ul>
         </section>
+
+        <!-- Script do Google Maps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDub_OzykqytbVobMhL_SfEoEjZDQzJzQ&callback=initMap"></script>
+        <script src="main.js"></script>
     </main>
 </body>
 </html>
