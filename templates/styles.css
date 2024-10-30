@@ -1,104 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(60deg, rgb(255, 208, 1) 0%, rgb(0, 0, 0) 45%, rgb(255, 208, 0) 100%);
-    color: white;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
+    html, body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        /*background: rgb(2,0,36);
+        background: linear-gradient(60deg, rgb(247, 1, 255) 0%, rgb(0, 0, 0) 45%, rgb(247, 1, 255) 100%);*/
+        color: white;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
 
-header {
-    width: 100%;
-    background-color: rgba(34, 33, 33, 0.774);
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
+    header {
+        width: 100%;
+        background-color: rgba(34, 33, 34, 0.774);
+        padding: 15px 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
 
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.menu li a {
-    text-decoration: none;
-    color: #e5e5e5;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    .menu li a {
+        text-decoration: none;
+        color: #e5e5e5;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
 
-.menu li a:hover {
-    color: white;
-}
+    .menu li a:hover {
+        color: white;
+    }
 
-main {
-    padding-top: 100px;
-}
+    
 
-/* Seção Início */
+    /* Seção Início */
 .inicio-section {
     display: flex;
-    justify-content: space-between; /* Distribui o conteúdo entre a imagem e o texto */
-    align-items: center;
+    flex-direction: column; /* Alinha conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     height: 100vh;
     text-align: center;
-    
-    
+    background: linear-gradient(0deg,rgb(0, 0, 0) 1%, rgb(244, 103, 249) 50%);
     position: relative;
 }
 
-.inicio-section::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50%; /* A largura da imagem ocupará metade da tela */
-    background-image: url('../static/thallia.jpeg'); /* Substitua pela sua imagem */
-    background-size: cover;
-    background-position: center;
-     /* Para garantir que a imagem fique atrás do conteúdo */
-}
-
 .intro-text {
-    width: 50%; /* O texto agora ocupará metade da tela, à esquerda */
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1; /* Certifica-se de que o texto fique na frente da imagem */
+    z-index: 1;
 }
 
-
 .intro-text .logo {
-    max-width: 400px; /* Ajuste o tamanho da logo conforme necessário */
-    margin-bottom: 40px; /* Espaçamento entre a logo e o título */
+    max-width: 500px;
+    margin-bottom: 40px;
 }
 
 .intro-text h1 {
     font-size: 3rem;
-    color: white;
+    color: rgb(245, 245, 245);
+    margin-bottom: 20px;
 }
 
 .intro-text p {
-    margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
+    padding: 30px 60px;
     background-color: #943894;
     color: white;
     text-decoration: none;
@@ -111,142 +95,160 @@ main {
     background-color: #6a265a;
 }
 
-/* Seção Procedimentos */
-.procedimentos-section {
-    background-color: #eee;
-    color: #333;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-}
+    /* Seção Procedimentos */
+    .procedimentos-section {
+        background-color: #eee;
+        color: #333;
+        padding: 60px 20px;
+    }
+    
+    .procedimentos-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .procedimentos-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 1000px;
+        width: 100%;
+    }
+    
+    .procedimentos-container.reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .image-container,
+    .procedimentos-text {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image-container img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+    
+    .procedimentos-text {
+        max-width: 400px;
+    }
+    
+    .procedimentos-text h3 {
+        font-size: 1.8rem;
+        color: #4b2354;
+        margin-bottom: 10px;
+    }
+    
+    .procedimentos-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    
+    /* Seção "Quem Somos" */
 
-.procedimentos-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1000px;
-    width: 100%;
-}
+    .about-section {
+        background: rgb(2,0,36);
+        background: linear-gradient(160deg,rgb(156, 1, 156) 45%, rgb(0, 0, 0) 100%);
+        color: #eee3ea;
+        padding: 40px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.image-container img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-}
-
-.procedimentos-text {
-    max-width: 600px;
-}
-
-.procedimentos-text h2 {
-    font-size: 2.5rem;
-    color: #4b2354;
-    margin-bottom: 20px;
-}
-
-.procedimentos-text p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-/* Seção "Quem Somos" */
-
-.about-section {
-    background: rgb(2,0,36);
-    background: linear-gradient(160deg,rgb(156, 1, 156) 45%, rgb(0, 0, 0) 100%);
-    color: #eee3ea;
-    padding: 40px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quem-somos-container {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
-    max-width: 1000px; /* Defina um limite para a largura máxima */
-}
-
-.quem-somos-container img {
-    width: 100%;
-    max-width: 300px; /* Tamanho máximo da imagem */
-    border-radius: 20px;
-}
-
-.quem-somos-text {
-    display: flex;
-    flex-direction: column; /* Coloca o h2 e p em uma coluna */
-    justify-content: flex-start; /* Alinha o texto no topo */
-    max-width: 600px; /* Define um tamanho máximo para o texto */
-    margin: 0;
-}
-
-.quem-somos-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.quem-somos-text p {
-    margin-top: 10px;
-}
-
-
-/* Seção de Contato */
-.contact-section {
-    background-color: black;
-    padding: 40px 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-.contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact-section ul {
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-.contact-section li {
-    margin-bottom: 10px;
-}
-
-/* Seção do Mapa */
-.map-section {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 40px; /* Espaçamento entre o mapa e a seção de contato */
-}
-
-#map {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Media Query para dispositivos móveis */
-@media (max-width: 768px) {
     .quem-somos-container {
-        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
-        align-items: center; /* Centraliza o conteúdo */
-        text-align: center; /* Centraliza o texto */
+        display: flex;
+        gap: 20px;
+        align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+        max-width: 1000px; /* Defina um limite para a largura máxima */
     }
 
     .quem-somos-container img {
-        max-width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+        width: 100%;
+        max-width: 300px; /* Tamanho máximo da imagem */
+        border-radius: 20px;
     }
 
     .quem-somos-text {
-        max-width: 100%; /* O texto também ocupa toda a largura disponível */
-        margin-top: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+        display: flex;
+        flex-direction: column; /* Coloca o h2 e p em uma coluna */
+        justify-content: flex-start; /* Alinha o texto no topo */
+        max-width: 600px; /* Define um tamanho máximo para o texto */
+        margin: 0;
     }
-}
+
+    .quem-somos-text h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .quem-somos-text p {
+        margin-top: 10px;
+    }
+
+    
+    /* Seção do Mapa */
+    .map-section {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px; /* Espaçamento entre o mapa e a seção de contato */
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+    /* Seção de Contato */
+    .contact-section {
+        background-color: black;
+        padding: 40px 20px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-section ul {
+        list-style: none;
+        font-size: 1.2rem;
+    }
+
+    .contact-section li {
+        margin-bottom: 10px;
+    }
+
+
+
+    /* Media Query para dispositivos móveis */
+    @media (max-width: 768px) {
+        .quem-somos-container {
+            flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+            align-items: center; /* Centraliza o conteúdo */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .quem-somos-container img {
+            max-width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+        }
+
+        .quem-somos-text {
+            max-width: 100%; /* O texto também ocupa toda a largura disponível */
+            margin-top: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+        }
+    }
 
 

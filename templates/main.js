@@ -1,7 +1,8 @@
 // Função para inicializar o mapa
 function initMap() {
     // Coordenadas da clínica (exemplo: São Paulo)
-    const localizacaoClinica = { lat: -23.55052, lng: -46.633308 }; // Substitua com as coordenadas corretas
+    //
+    const localizacaoClinica = { lat: -23.60344335895204, lng: -46.52975984700882 }; // Substitua com as coordenadas corretas
 
     // Cria um mapa centralizado nas coordenadas
     const map = new google.maps.Map(document.getElementById("map"), {
