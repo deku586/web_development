@@ -45,16 +45,22 @@
     
 
     /* Seção Início */
-.inicio-section {
-    display: flex;
-    flex-direction: column; /* Alinha conteúdo em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    height: 100vh;
-    text-align: center;
-    background: linear-gradient(0deg,rgb(0, 0, 0) 1%, rgb(244, 103, 249) 50%);
-    position: relative;
-}
+    .inicio-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+        background-image: url('../static/Untitled.png'); /* Caminho para sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: top; /* Centraliza a imagem para melhor alinhamento */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+        color: white; /* Caso a imagem tenha fundo escuro */
+        z-index: 1;
+    }
+    
 
 .intro-text {
     display: flex;
