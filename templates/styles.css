@@ -257,4 +257,64 @@
         }
     }
 
+    /* Estilos básicos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 40px; /* Distância da direita da tela */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.floating-button {
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    border: none; /* Remove a borda padrão */
+    border-radius: 15px; /* Arredonda levemente as bordas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+    cursor: pointer; /* Cursor de ponteiro */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.floating-button img {
+    width: 60px; /* Ajuste a largura da imagem */
+    height: 60px; /* Ajuste a altura da imagem */
+    border-radius: 50%; /* Faz as imagens redondas */
+}
+
+.floating-button:hover {
+    transform: scale(1.1); /* Efeito de aumentar o botão ao passar o mouse */
+}
+
+/* Cores de fundo específicas para cada rede social */
+.facebook {
+    background-color: white; /* Azul do Facebook */
+}
+
+.instagram {
+    background-color: white; /* Rosa do Instagram */
+}
+
+.whatsapp {
+    background-color: white; /* Verde do WhatsApp */
+}
