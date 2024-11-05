@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bawt Estetica</title>
@@ -23,7 +24,6 @@
             <img src="../static/MMlosango.png" alt="LogoMM" class="logo">
             <h1>Realce a sua Beleza Natural</h1>
             <p>Desperte a sua melhor versão com procedimentos exclusivos e personalizados.</p>
-            <a href="https://wa.me/+5511940025146" target="_blank" class="btn">Agende Agora</a>
         </div>
     </section>
 
@@ -93,44 +93,76 @@
         </div>
     </section>
 
-   <!-- Seção "Quem Sou" -->
+<!-- Seção "Quem Sou" -->
 <section id="quem-somos" class="about-section">
     <div class="quem-somos-container">
         <div class="imagem-pessoal">
-            <img src="../static/mae.png" alt="Imagem da pessoa">
+            <img src="../static/profilePicture.jpeg" alt="Imagem da pessoa">
         </div>
         <div class="quem-somos-text">
-            <h2>Quem Sou</h2>
+            <h2>Michelly Monteiro</h2>
             <p>Sou especialista em estética e beleza, dedicada a oferecer os melhores cuidados para que você possa realçar sua beleza natural. Com técnicas inovadoras e produtos de alta qualidade, estou aqui para ajudar você a alcançar a melhor versão de si.</p>
+            
+            <!-- Título "Agende sua Avaliação" e Link do WhatsApp -->
+            <p><strong>Agende sua avaliação:</strong></p>
+            <p>
+                <a href="https://wa.me/+5511940025146" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 10px;"></i>WhatsApp: (11) 94749-5989
+                </a>
+            </p>
+
+            <!-- Título "Visite minhas redes sociais" e Links do Instagram e Facebook -->
+            <p><strong>Visite minhas redes sociais:</strong></p>
+            <p>
+                <a href="https://instagram.com/bawtestetica" target="_blank" class="social-link">
+                    <i class="fab fa-instagram" style="font-size: 20px; margin-right: 10px;"></i>@dratalitagomes
+                </a>
+            </p>
+            <p>
+                <a href="https://facebook.com/bawtestetica" target="_blank" class="social-link">
+                    <i class="fab fa-facebook" style="font-size: 20px; margin-right: 10px;"></i> @dratalitagomes
+                </a>
+            </p>
+
+            <!-- Botão "Nos Visite!" -->
+            <a href="https://www.google.com/maps/dir/-23.6124787,-46.5131771/-23.60358,-46.5297399/@-23.6077554,-46.5314209,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="visit-button">Nos visite!</a>
         </div>
     </div>
 </section>
 
+<style>
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
 
-    <!-- Seção Mapa -->
-    <section id="mapa" class="map-section">
-        <div id="map"></div>
-    </section>
+    .social-link:hover {
+        color: #6c2a6b; /* Cor ao passar o mouse */
+        transform: translateX(5px); /* Animação de mover o link para a direita */
+    }
 
+    .visit-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #6c2a6b;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
 
-    <!-- Botões flutuantes-->
-    <div class="floating-buttons">
-        <a href="https://facebook.com/bawtestetica" target="_blank" class="floating-button facebook">
-            <img src="../static/imagem-facebook.png" alt="Facebook" />
-        </a>
-        <a href="https://instagram.com/bawtestetica/" target="_blank" class="floating-button instagram">
-            <img src="../static/imagem-instagram.png " alt="Instagram" />
-        </a>
-    </div>
+    .visit-button:hover {
+        background-color: #5a215a;
+    }
+</style>
 
-      <!-- Seção Mapa -->
-      <section id="mapa" class="map-section">
-        <div id="map"></div>
-    </section>
-    
-    <!-- Script do Google Maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDub_OzykqytbVobMhL_SfEoEjZDQzJzQ&callback=initMap"></script>
-    <script src="main.js"></script>
+<!-- Adicionando Font Awesome para os ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <footer style="background: linear-gradient(135deg, #f09fcf 0%, #643774 100%); color: #ccc; padding: 20px 0; font-size: 14px;">
         <div style="display: flex; justify-content: space-around; max-width: 1200px; margin: auto; flex-wrap: wrap;">
