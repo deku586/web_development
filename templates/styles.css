@@ -209,128 +209,56 @@ margin-bottom: 40px;
 /* Seção "Quem sou" */
 
 .about-section {
-    background-image: url(../static/bgSectionProc.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    color: #333;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Lora', serif;
+    background-color: #f9f9f9;
+    padding: 10px;
 }
 
 .quem-somos-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    max-width: 800px;
+    align-items: center; /* Alinha verticalmente no centro */
 }
 
-.quem-somos-container img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.imagem-pessoal img {
+    max-width: 70%; /* Mantém a imagem grande */
+    border-radius: 10px;
+    margin-right: 10px; /* Ajuste a margem direita para controlar a distância do texto */
 }
 
 .quem-somos-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 500%; /* Largura do texto */
+    color: black;
 }
 
 .quem-somos-text h2 {
-    font-size: 2.5rem;
-    color: #4b2354;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .quem-somos-text p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
-
-/* Seção do Mapa */
-.map-section {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 40px; 
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c2a6b; /* Cor de fundo do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-#map {
-    width: 100%;
-    height: 100%;
+.visit-button:hover {
+    background-color: #5a215a; /* Cor ao passar o mouse */
 }
-
-
-
 
 /* Estilos básicos para o corpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.floating-buttons {
-position: fixed;
-bottom: 20px; /* Distância do fundo da tela */
-right: 40px; /* Distância da direita da tela */
-display: flex;
-flex-direction: column;
-gap: 10px; /* Espaço entre os botões */
-}
-
-.floating-buttons {
-position: fixed;
-bottom: 20px; /* Distância do fundo da tela */
-right: 20px;
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-
-.floating-button {
-width: 60px; 
-height: 60px; 
-background-color: rgba(255, 255, 255, 0.8);
-border: none;
-border-radius: 15px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease;
-cursor: pointer; /* Cursor de ponteiro */
-display: flex;
-justify-content: center; /* Centraliza horizontalmente */
-align-items: center; /* Centraliza verticalmente */
-}
-
-.floating-button img {
-width: 60px;
-height: 60px;
-border-radius: 50%;
-}
-
-.floating-button:hover {
-transform: scale(1.1); /* Efeito de aumentar o botão ao passar o mouse */
-}
-
-/* Cores de fundo específicas para cada rede social */
-.facebook {
-background-color: rgb(255, 255, 255); /* Azul do Facebook */
-}
-
-.instagram {
-background-color: white; /* Rosa do Instagram */
-}
-
-.whatsapp {
-background-color: white; /* Verde do WhatsApp */
 }
     /* Media Query pra dispositivos móveis */
     
@@ -377,22 +305,3 @@ background-color: white; /* Verde do WhatsApp */
             .quem-somos-text h2 {
                 font-size: 2rem;
             }
-        
-            /* Botões flutuantes ajustados pra dispositivos móveis */
-            .floating-buttons {
-                bottom: 10px;
-                right: 10px;
-                gap: 5px;
-            }
-        
-            .floating-button {
-                width: 50px;
-                height: 50px;
-            }
-        
-            .floating-button img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    
