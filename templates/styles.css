@@ -26,6 +26,25 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo do botão "Agende Agora" */
+.agende-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6c2a6b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; /* Borda levemente arredondada */
+    border: none; /* Remover a borda */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.agende-button:hover {
+    background-color: #5a215a; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
 .menu {
     list-style: none;
     display: flex;
