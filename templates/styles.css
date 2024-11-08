@@ -259,20 +259,6 @@ margin-bottom: 40px;
     line-height: 1.5;
 }
 
-.visit-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6c2a6b; /* Cor de fundo do botão */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.visit-button:hover {
-    background-color: #5a215a; /* Cor ao passar o mouse */
-}
-
 /* Estilos básicos para o corpo */
 body {
     font-family: Arial, sans-serif;
