@@ -16,14 +16,14 @@ html, body {
 
 header {
     width: 100%;
-    background: linear-gradient(135deg, rgba(34, 33, 34, 0.9), rgba(34, 33, 34, 0.7));
+    background: linear-gradient(135deg, rgba(#370037), rgb(168, 119, 170));
     backdrop-filter: blur(10px);
-    padding: 15px 0;
+    padding: 5px 0;
     text-align: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(231, 217, 217, 0.2);
 }
 
 .menu {
@@ -41,12 +41,12 @@ header {
 
 .menu li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #d8c9d4;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #fd5c63, #943894); /* Gradiente para o fundo do link */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra nos links */
+    background: linear-gradient(#d6e9ff, #370037, #9c019b); /* Gradiente para o fundo do link */
+    box-shadow: 0 4px 8px rgba(#d6e9ff); /* Sombra nos links */
     transition: all 0.3s ease;
     display: inline-block;
 }
@@ -77,8 +77,6 @@ header {
     transform-origin: left;
 }
 
-
-
 /* Seção Início */
 .inicio-section {
 display: flex;
@@ -87,7 +85,7 @@ justify-content: center; /* Centraliza verticalmente */
 align-items: center; /* Centraliza horizontalmente */
 height: 100vh;
 text-align: center;
-background: linear-gradient(135deg, #f09fcf 0%, #643774 100%);
+background: linear-gradient(135deg, #d58bbd 0%, #370037 100%);
 color: #fff;
 position: relative;
 }
@@ -129,6 +127,31 @@ margin-bottom: 40px;
     font-weight: bold;
     border-radius: 25px;
     transition: background-color 0.3s ease;
+    background-color: #6a265a;
+
+}
+.social-link {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    background: linear-gradient(#d6e9ff, #370037, #9c019b);
+    color: #d6e9ff;
+}
+.social-link:hover {
+    color: #d6e9ff;
+    background: linear-gradient(135deg, #b7165b, #6a265a);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.social-link .fab {
+    color: #d6e9ff;
+}
+.social-link:hover .fab {
+    color: #d6e9ff; 
 }
 
 .btn:hover {
@@ -248,6 +271,7 @@ margin-bottom: 40px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    font-family: Arial, sans-serif;
 }
 
 .visit-button:hover {
@@ -305,3 +329,4 @@ body {
             .quem-somos-text h2 {
                 font-size: 2rem;
             }
+        }

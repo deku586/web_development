@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bawt Esteticaa</title>
+    <title>Bawt Estetica</title>
     <link rel="shortcut icon" href="../static/logoMM-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,6 +15,11 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#procedimentos">Procedimentos</a></li>
                 <li><a href="#quem-somos">Quem Somos</a></li>
+                <li>
+                    <a href="https://wa.me/+5511940025146" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 10px;"></i>WhatsApp: (11) 94749-5989
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,7 +38,7 @@
         <div class="procedimentos-grid">
             <div class="procedimentos-container">
                 <div class="image-container">
-                    <img src="../static/Crio01.jpeg" alt="Harmonização Corporal", id="carousel-corporal">
+                    <img src="../static/corpo.jpg" alt="Harmonização Corporal", id="carousel-corporal">
                 </div>
                 <div class="procedimentos-text">
                     <h3>Harmonização Corporal</h3>
@@ -43,7 +48,7 @@
 
             <div class="procedimentos-container reverse">
                 <div class="image-container">
-                    <img src="../static/mae.png" alt="Harmonização Facial">
+                    <img src="../static/thallia.jpeg" alt="Harmonização Facial">
                 </div>
                 <div class="procedimentos-text">
                     <h3>Harmonização Facial</h3>
@@ -53,7 +58,7 @@
 
             <div class="procedimentos-container">
                 <div class="image-container">
-                    <img src="../static/mae.png" alt="Harmonização de Glúteos">
+                    <img src="../static/gluteo.jpg" alt="Harmonização de Glúteos">
                 </div>
                 <div class="procedimentos-text">
                     <h3>Harmonização de Glúteos</h3>
@@ -63,7 +68,7 @@
 
             <div class="procedimentos-container reverse">
                 <div class="image-container">
-                    <img src="../static/mae.png" alt="Hidro Lipo Não Aspirativa">
+                    <img src="../static/hidro.jpg" alt="Hidro Lipo Não Aspirativa">
                 </div>
                 <div class="procedimentos-text">
                     <h3>Hidro Lipo Não Aspirativa</h3>
@@ -83,10 +88,10 @@
 
             <div class="procedimentos-container reverse">
                 <div class="image-container">
-                    <img src="../static/mae.png" alt="Outro Procedimento">
+                    <img src="../static/outros.jpg" alt="Outros Procedimentos">
                 </div>
                 <div class="procedimentos-text">
-                    <h3>Outro Procedimento</h3>
+                    <h3>Outros Procedimentos</h3>
                     <p>Oferecemos uma gama de outros procedimentos estéticos para melhorar sua saúde e aparência.</p>
                 </div>
             </div>
@@ -135,10 +140,24 @@
         display: inline-flex;
         align-items: center;
         font-size: 18px;
-        color: #333;
+        color: #d6e9ff;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
     }
+    .social-link i {
+    animation: piscar 1.5s infinite; /* A animação vai durar 1 segundo e vai se repetir infinitamente */
+}
+@keyframes piscar {
+    0% {
+        opacity: 1; /* Visível */
+    }
+    80% {
+        opacity: 0; /* Invisível */
+    }
+    100% {
+        opacity: 1; /* Visível novamente */
+    }
+}
 
     .social-link:hover {
         color: #6c2a6b; /* Cor ao passar o mouse */
@@ -146,16 +165,21 @@
     }
 
     .visit-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #6c2a6b;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        transition: background-color 0.3s ease;
-    }
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c2a6b;
+    color: #d6e9ff;
+    text-decoration: none;
+    border-radius: 25px; 
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
 
+/* Efeito de hover */
+.visit-button:hover {
+    background-color: #5a215a; /* Cor ao passar o mouse */
+    font-weight: bold; /* Torna o texto em negrito */
+}
     .visit-button:hover {
         background-color: #5a215a;
     }
@@ -164,7 +188,7 @@
 <!-- Adicionando Font Awesome para os ícones -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <footer style="background: linear-gradient(135deg, #f09fcf 0%, #643774 100%); color: #ccc; padding: 20px 0; font-size: 14px;">
+    <footer style="background: linear-gradient(135deg, #d58bbd 0%, #370037 100%); color: #ccc; padding: 20px 0; font-size: 14px;">
         <div style="display: flex; justify-content: space-around; max-width: 1200px; margin: auto; flex-wrap: wrap;">
             <!-- Logo e Nome -->
             <div style="flex: 1; text-align: center; margin-bottom: 20px;">
@@ -173,7 +197,7 @@
     
             <!-- Serviços -->
             <div style="flex: 1; text-align: center; margin-bottom: 20px;">
-                <h3 style="color: #fff; margin-bottom: 10px;">Serviços</h3>
+                <h3 style="color: #d6e9ff; margin-bottom: 10px;">Serviços</h3>
                 <ul style="list-style: none; padding: 0; margin: 0; color: #ccc;">
                     <li>Bioestimulador de Colágeno</li>
                     <li>Preenchimento Labial</li>
@@ -186,7 +210,7 @@
     
             <!-- Links Úteis -->
             <div style="flex: 1; text-align: center; margin-bottom: 20px;">
-                <h3 style="color: #fff; margin-bottom: 10px;">Links Úteis</h3>
+                <h3 style="color: #d6e9ff; margin-bottom: 10px;">Links Úteis</h3>
                 <ul style="list-style: none; padding: 0; margin: 0; color: #ccc;">
                     <li>Início</li>
                     <li>Procedimentos</li>
