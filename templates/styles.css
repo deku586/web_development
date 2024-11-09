@@ -355,4 +355,9 @@ body {
     .quem-somos-text h2 {
         font-size: 2rem;
     }
+
+    .intro-text .logo {
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
 }
