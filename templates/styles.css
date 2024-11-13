@@ -18,7 +18,7 @@ header {
     width: 100%;
     background-color: transparent; 
     border: 2px solid var(--branco-principal);
-    backdrop-filter: blur(10px); /* Desfoque do conteúdo atrás do elemento */
+    backdrop-filter: blur(10px); 
     padding: 5px 0;
     text-align: center;
     position: fixed;
@@ -46,17 +46,17 @@ header {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(#d6e9ff, #370037, #9c019b); /* Gradiente para o fundo do link */
-    box-shadow: 0 4px 8px rgba(214, 233, 255, 0.5); /* Sombra corrigida */
+    background: linear-gradient(#d6e9ff, #370037, #9c019b); 
+    box-shadow: 0 4px 8px rgba(214, 233, 255, 0.5); 
     transition: all 0.3s ease;
     display: inline-block;
 }
 
 .menu li a:hover {
     color: #ffffff;
-    background: linear-gradient(135deg, #b7165b, #6a265a); /* Gradiente mais escuro no hover */
-    transform: scale(1.05); /* Efeito de crescimento no hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+    background: linear-gradient(135deg, #b7165b, #6a265a); 
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Efeito de sublinhado animado */
@@ -81,9 +81,9 @@ header {
 /* Seção Início */
 .inicio-section {
     display: flex;
-    flex-direction: column; /* Alinha conteúdo em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     height: 100vh;
     text-align: center;
     background: linear-gradient(135deg, #d58bbd 0%, #370037 100%);
@@ -122,22 +122,22 @@ header {
 .agende-button {
     display: inline-block;
     padding: 15px 40px;
-    background-color: #6a265a; /* Cor de fundo igual ao da seção início */
+    background-color: #6a265a; 
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 25px; /* Bordas arredondadas */
-    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-    background: linear-gradient(135deg, #d6e9ff, #370037, #9c019b); /* Gradiente para o fundo */
-    box-shadow: 0 4px 8px rgba(214, 233, 255, 0.5); /* Sombra do botão */
+    border-radius: 25px; 
+    transition: all 0.3s ease; 
+    background: linear-gradient(135deg, #d6e9ff, #370037, #9c019b); 
+    box-shadow: 0 4px 8px rgba(214, 233, 255, 0.5); 
     
 }
 
 .agende-button:hover {
     color: #fff;
-    background: linear-gradient(135deg, #b7165b, #6a265a); /* Gradiente mais escuro no hover */
-    transform: scale(1.05); /* Efeito de crescimento no hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+    background: linear-gradient(135deg, #b7165b, #6a265a); 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Efeito de sublinhado animado */
@@ -306,12 +306,7 @@ header {
     background-color: #5a215a;
 }
 
-/* Estilos básicos para o corpo */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
@@ -322,7 +317,7 @@ body {
         gap: 10px;
     }
 
-    /* Ajustes para Seção Início */
+   
     .intro-text h1 {
         font-size: 2.5rem;
     }
@@ -331,7 +326,7 @@ body {
         font-size: 1.2rem;
     }
 
-    /* Ajustes para a Seção Procedimentos */
+   
     .procedimentos-container {
         flex-direction: column;
         text-align: center;
@@ -341,11 +336,20 @@ body {
         flex-direction: column;
     }
 
-    .image-container img {
-        max-width: 100%;
-    }
+    
+.image-container img {
+    transition: opacity 1s ease-in-out;
+}
 
-    /* Ajustes para a Seção Quem Sou */
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+
+
+    
     .quem-somos-container {
         flex-direction: column;
         text-align: center;
@@ -357,7 +361,21 @@ body {
     }
 
     .intro-text .logo {
-        max-width: 400px;
-        margin-bottom: 40px;
-    }
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+    justify-items: center;
+    padding: 0px;
+}
+
+.menu li a {
+    font-size: 1rem; 
+    padding: 8px 15px; 
+}
+
 }
