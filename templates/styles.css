@@ -7,24 +7,27 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-    /*background: rgb(2,0,36);
-    background: linear-gradient(60deg, rgb(247, 1, 255) 0%, rgb(0, 0, 0) 45%, rgb(247, 1, 255) 100%);*/
+    background: linear-gradient(135deg, #d58bbd 0%, #370037 100%);
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding-top: 52px;
+    
+    
 }
 
 header {
     width: 100%;
     background-color: transparent; 
     border: 2px solid var(--branco-principal);
-    backdrop-filter: blur(10px); 
     padding: 5px 0;
     text-align: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 8px rgba(231, 217, 217, 0.2);
+    box-shadow: 0 4px 8px rgba(231, 217, 217, 0.2);
+    
+
 }
 
 .menu {
