@@ -6,17 +6,16 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #d58bbd 0%, #370037 100%);
+    font-family: Arial, sans-serif;  
+    background: linear-gradient(139deg, #d58bbd 0%, #370037 100%);
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 52px;
-    
     
 }
 
 header {
+    backdrop-filter: blur(10px); 
     width: 100%;
     background-color: transparent; 
     border: 2px solid var(--branco-principal);
@@ -29,6 +28,12 @@ header {
     
 
 }
+
+
+#inicio {
+    margin-top: 60px; 
+}
+
 
 .menu {
     list-style: none;
@@ -344,6 +349,13 @@ font-weight: bold
 
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
+
+   
+#inicio {
+    margin-top: 50px; 
+}
+
+
     .menu {
         flex-direction: row;
         padding: 10px;
