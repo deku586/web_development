@@ -291,21 +291,52 @@ header {
     line-height: 1.5;
 }
 
-.visit-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6c2a6b;
-    color: white;
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #d6e9ff;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
 }
+
+.social-link i {
+animation: piscar 1.5s infinite; /* A animação vai durar 1 segundo e vai se repetir infinitamente */
+}
+
+@keyframes piscar {
+0% {
+    opacity: 1; 
+}
+80% {
+    opacity: 0;
+}
+100% {
+    opacity: 1; 
+}
+}
+
+.social-link:hover {
+    color: #6c2a6b; 
+    transform: translateX(5px);
+}
+
+.visit-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #6c2a6b;
+color: #d6e9ff;
+text-decoration: none;
+border-radius: 25px; 
+margin-top: 10px;
+transition: background-color 0.3s ease;
+}
+
 
 .visit-button:hover {
-    background-color: #5a215a;
+background-color: #5a215a; 
+font-weight: bold
 }
-
 
 
 /* Media Query para dispositivos móveis */
@@ -335,19 +366,6 @@ header {
     .procedimentos-container.reverse {
         flex-direction: column;
     }
-
-    
-.image-container img {
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-out {
-    opacity: 0;
-}
-.fade-in {
-    opacity: 1;
-}
-
 
     
     .quem-somos-container {
